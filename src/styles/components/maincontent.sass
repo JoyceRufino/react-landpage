@@ -1,0 +1,37 @@
+@use '../variables'
+@use '../mixins'
+
+#maincontent
+    background-color: variables.$bg-color
+    flex: 1 1 0
+    border-radius: variables.$container-border-radius
+    padding: 3rem
+
+    section
+        display: flex
+        flex-direction: column
+
+    h2
+        color: variables.$text-color
+        font-size: 2rem
+        margin-bottom: 1rem
+        @include mixins.center    
+        justify-content: start
+        gap: 1rem
+        color: #fff
+
+        &:after
+            @include mixins.border-title
+
+    p
+        color: variables.$text-color-secundary
+        margin-bottom: 1rem
+        line-height: 1rem
+
+    .btn
+        @include mixins.btn
+        align-self: start
+        
+
+            
+            
